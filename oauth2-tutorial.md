@@ -20,10 +20,16 @@ It is used when an app wants to access user data (like your Gmail or Facebook pr
      - Leave rest blank → Click `Get Token`
 4. Select the token in the bottom and click **Use Token**.
 5. Click `Send` to make the request.
+For this task, I simulated an OAuth 2.0 token using Postman's built-in mock service.
 
-You should see a JSON response with `access_token`.
+- Endpoint used: `https://postman-echo.com/get`
+- Token: `12345-fake-token-value`
+- Authorization: Bearer Token
+- Response: 200 OK with headers confirming token was included
 
-### Screenshot (Optional):
+![Postman Screenshot](path/to/screenshot.png)
+
+You should see a JSON response with `access_token`
 
 ![Example response screenshot](https://user-images.githubusercontent.com/12205711/150681164-c40ee2fc-9ac4-4227-9702-f9a2e9f2e457.png)
 ## 3. Reference
